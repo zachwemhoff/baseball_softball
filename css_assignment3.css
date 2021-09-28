@@ -6,9 +6,6 @@ body {
 /* --- Header --- */
 header {
   background-color: #192A75;
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-size: 300px 100px;
   color: #f9e5af;
   font-family: Georgia, Palatino, 'Century Schoolbook', serif;
   font-size: 60px;
