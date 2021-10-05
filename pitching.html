@@ -4,25 +4,81 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Baseball &amp; Softball Pitching</title>
+
+		<!-- This says our CSS is compatible with phones, and phones
+       don't need to scale it strangely. -->
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  		 <!-- Bootstrap CSS -->
+  		 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+          crossorigin="anonymous">
+ 
+ 		<!-- Optional Theme -->
+  		<link href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/superhero/bootstrap.min.css"
+  		rel="stylesheet"
+  	 	integrity="sha384-HnTY+mLT0stQlOwD3wcAzSVAZbrBp141qwfR4WfTqVQKSgmcgzk+oP0ieIyrxiFO" 
+  	 	crossorigin="anonymous">
+
 	</head>
 <body>
 <header>
-	<nav>
-	<ul>
-		<li><a href="index.html">Home Page</a></li>
-		<li><a href="aboutpage.html">About Page</a></li>
-		<li><a href="pitching.html">Pitching</a></li>
-		<li><a href="hitting.html">Hitting</a></li>
-		<li><a href="fielding.html">Fielding</a></li>
-		<li><a href="sales.html">Sales</a></li>
-	</ul>
-	</nav>
+	<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container-fluid">
+      <!-- Brand/site name -->
+      <a class="navbar-brand" href="#">Baseball and Softball Information</a>
+      <!-- Hamburger icon -->
+      <button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Div to hide stuff if we have hamburger -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Nav bar item list -->
+        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+          <li class="nav-item">
+            <!-- This is the style for the 'active' page -->
+            <a class="nav-link" href="index.html">Home Page</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="aboutpage.html">About Page</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Pitching</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="hitting.html">Hitting</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="fielding.html">Fielding</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="sales.html">Sales</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>
+
+<div class="container">
 
 		<h1 class="odd_heading">Pitching</h1>
 
 	<article>
 	<h2 class="even_heading">About Pitching</h2>
+
 	<p>When comparing pitching between baseball and softball the first noticeable
 	thing is how the windups are significantly different. In baseball it's an
 	overhand throw to pitch and they are sixty feet away from home plate. But, in
@@ -49,6 +105,15 @@
 	compared to softball. But pitches like the drop and rise ball in softball
 	are movements baseball players don't see.</p>
 
+	<div class="card" style="width: 18rem;">
+  <img src="images/baseball.png" class="card-img-top" alt="Real Baseball Game Ball">
+  <div class="card-body">
+    <h5 class="card-title">Baseball</h5>
+    <p class="card-text">This image of a baseball shows how the size and the seams of a baseball
+     make it unique as far as pithing goes.</p>
+  </div>
+</div>
+
 	<p>Pitching in both sports is also a mentally straining activity. Successful
 	 Pitchers must understand what a batter excels at and where they can take
 	 advantage of their weaknesses. Additionally, pitchers will begin to switch
@@ -59,6 +124,13 @@
 	 All of this makes pitching a physically and mentally strenuous activity.</p>
 	<!--Added by Zach Wemhoff-->
 	</article>
+
+	</div> <!-- close container div -->
+
+	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous">
+	</script>
 
 </body>
 </html>

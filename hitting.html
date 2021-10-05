@@ -4,32 +4,101 @@
 <head>
 	<meta charset="utf-8">
 	<title>Baseball & Softball Information</title>
+
+	<!-- This says our CSS is compatible with phones, and phones
+       don't need to scale it strangely. -->
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  		 <!-- Bootstrap CSS -->
+  		 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+          crossorigin="anonymous">
+ 
+ 		<!-- Optional Theme -->
+  		<link href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/superhero/bootstrap.min.css"
+  		rel="stylesheet"
+  	 	integrity="sha384-HnTY+mLT0stQlOwD3wcAzSVAZbrBp141qwfR4WfTqVQKSgmcgzk+oP0ieIyrxiFO" 
+  	 	crossorigin="anonymous">
 </head>
 <body>
 <header>
-	<nav>
-	<ul>
-		<li><a href="index.html">Home Page</a></li>
-		<li><a href="aboutpage.html">About Page</a></li>
-		<li><a href="pitching.html">Pitching</a></li>
-		<li><a href="hitting.html">Hitting</a></li>
-		<li><a href="fielding.html">Fielding</a></li>
-		<li><a href="sales.html">Sales</a></li>
-	</ul>
-	</nav>
+	<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container-fluid">
+      <!-- Brand/site name -->
+      <a class="navbar-brand" href="#">Baseball and Softball Information</a>
+      <!-- Hamburger icon -->
+      <button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Div to hide stuff if we have hamburger -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Nav bar item list -->
+        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+          <li class="nav-item">
+            <!-- This is the style for the 'active' page -->
+            <a class="nav-link" href="index.html">Home Page</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="aboutpage.html">About Page</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="pitching.html">Pitching</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Hitting</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="fielding.html">Fielding</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="sales.html">Sales</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>
+
+<div class="container">
 
 	<h1 class="odd_heading">Hitting</h1>
 
 	<article>
 	<h2 class="even_heading">About Hitting</h2>
+  
+  <div class="row">
+  <div class="mycolor col-4">
 	<p>When trying to hit a baseball there are many things that a person can focus on. Things such as where your feet are at, where your hands are, how tall or hunched over you are, how close or far away from the plate, whether you lift your leg up or not, if you step, or not, whether you finish your swing with one or two hands. All of these pieces together go into hitting. The biggest key to hitting is finding a comfortable rhythm that works for you, but most importantly something that gets good results. The phrase, if it ain't broke, don't fix it, is something that you can go by as a hitter.</p>
+  </div>
 
-
+  <div class="mycolor col-4">
 	<p>There are some differences between hitting a baseball and hitting a softball. For one, the size of the ball is different. A softball is much bigger than a baseball is. For this reason, a baseball bat is wider around than a softball bat is. Another difference is that softball pitchers throw in an underhand motion, rather than overhand. This makes baseball pitchers throw harder than softball pitchers. Also, the softball pitcher area is flat, where the baseball mound is elevated. A softball mound is closer to home plate than a baseball mound as well.</p>
+  </div>
 
-
+  <div class="mycolor col-4">
 	<p>My overall message is that hitting a softball or a baseball is very hard. I would say that it is one of the hardest if not the hardest thing to do in sports. The hand eye cordination, timing, and strength needed is crazy in order to do.</p>
+  </div>
+</div>
 	</article>
+
+	</div> <!-- close container div -->
+
+	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous">
+	</script>
+
 </body>
 </html>
